@@ -1,0 +1,48 @@
+body {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .container-fluid {
+    height: 100vh;
+    padding-top: 20px;
+  }
+
+  .sidebar {
+    background-color: #222;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .list-group {
+    margin-bottom: 20px;
+    height: 100vh;
+    /* color: white; */
+  }
+
+  .club-button {
+    background-color: #444;
+    border-color: #444;
+  }
+
+  .club-button:hover {
+    background-color: #555;
+    border-color: #555;
+  }
+
+  .club-button:focus {
+    background-color: #555;
+    border-color: #555;
+    box-shadow: none;
+  }
+
+  .club-button.active {
+    background-color: #666;
+    border-color: #666;
+  }
+
+  .col-md-9 {
+    background-color: #111;
+    height: 100%;
+    padding: 20px;
+  }
