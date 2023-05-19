@@ -16,12 +16,13 @@ body {
 
   .list-group {
     margin-bottom: 20px;
+    height: 100vh;
+    /* color: white; */
   }
 
   .club-button {
     background-color: #444;
     border-color: #444;
-    color: #fff;
   }
 
   .club-button:hover {
@@ -44,37 +45,4 @@ body {
     background-color: #111;
     height: 100%;
     padding: 20px;
-  }
-
-  .team-info {
-    margin-bottom: 20px;
-  }
-
-  .player-list {
-    margin-bottom: 20px;
-  }
-
-  .form-group {
-    margin-bottom: 10px;
-  }
-
-  .form-group input {
-    background-color: #444;
-    color: #fff;
-  }
-
-  .form-group label {
-    margin-right: 10px;
-    color: #fff;
-  }
-
-  .form-group input[type="submit"] {
-    background-color: #444;
-    border-color: #444;
-    color: #fff;
-  }
-
-  .form-group input[type="submit"]:hover {
-    background-color: #555;
-    border-color: #555;
   }

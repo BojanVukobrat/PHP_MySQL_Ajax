@@ -6,10 +6,8 @@ window.onload = function getAllTeams() {
         },
         success: function (response) {
             if (response == "") {
-                console.log(localStorage.getItem("id"));
                 return "a";
             }
-            console.log(response);
             const data = JSON.parse(response);
             for (let i = 0; i < data.length; i++) {
                 const id = data[i].id;
@@ -92,16 +90,15 @@ function addPlayerToBottom(id, name, position) {
   }
 
   function addClubToBottom(id, clubText, points) {
-    const clubList = document.querySelector('.list-group'); // Select the element with class 'list-group'
-    const clubElement = document.createElement('button'); // Create a button element instead of a div
+    const clubList = document.querySelector('.list-group'); 
+    const clubElement = document.createElement('button'); 
     const pointsElement = document.createElement('p');
-    clubElement.classList.add('list-group-item', 'list-group-item-action', 'club-button', 'text-light'); // Add necessary classes to the button
-    clubElement.setAttribute('data-club', clubText+'('+points+')'); // Set the 'data-club' attribute to the club text
+    clubElement.classList.add('list-group-item', 'list-group-item-action', 'club-button', 'text-light'); 
+    clubElement.setAttribute('data-club', clubText+'('+points+')'); 
     clubElement.textContent = clubText;
     pointsElement.textContent = 'Points: '+points;
   
     clubElement.addEventListener('click', function() {
-      // Handle the click event
       getAllPlayers(id);
     });
   

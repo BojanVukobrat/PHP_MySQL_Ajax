@@ -5,40 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar Example</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-          <!-- Sidebar -->
-          <div class="col-md-3">
-            <div class="sidebar">
-              <h4>Football Clubs</h4>
-              <div class="list-group">
-                <!-- <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 1">Club 1</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 2">Club 2</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 3">Club 3</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 4">Club 4</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 5">Club 5</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 6">Club 6</button>
-                <button class="list-group-item list-group-item-action club-button text-light" data-club="Club 7">Club 7</button> -->
-              </div>
+          <div class="col-md-6 offset-md-3">
+            <div class="login-container">
+              <h2>Login</h2>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button class="btn btn-primary" onclick="login()">Login</button>
             </div>
-          </div>
-          <!-- Content -->
-          <div class="col-md-9">
-            <h1>Football league</h1>
-            <div id="team-container-main"></div>
           </div>
         </div>
       </div>
       
       
 
-    <!-- Bootstrap JS (jQuery and Popper.js are required) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min

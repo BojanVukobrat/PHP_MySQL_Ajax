@@ -19,15 +19,6 @@
                   WHERE p.teamId = $teamId";
             return $conn->query($q);
         }
-
-        // public static function getReservationsById(mysqli $conn, $userId) {
-        //     $q = "SELECT r.id, r.date, r.numberOfDays, r.roomId, r.userId, u.username, ro.price 
-        //           FROM hotel.reservation AS r
-        //           INNER JOIN hotel.user AS u ON r.userId = u.id
-        //           INNER JOIN hotel.room AS ro ON r.roomId = ro.id
-        //           WHERE u.id='$userId'";
-        //     return $conn->query($q);
-        // }
         
         public static function addPlayer(mysqli $conn, $name, $position, $teamId){
             $q = "INSERT INTO `league`.`player` (`name`, `position`, `teamId`) VALUES ('$name', '$position', '$teamId')";
